@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("/img_asgn2/backgroundw.jpg");
+    background-size:cover;
+}
+
+/*Top banner*/
+header { 
+    display: flex;
+    background-color: #0ba01d;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+    text-decoration: none;
+    justify-content: space-between;
+    height: 80px;
+}
+.info img {
+    position: relative;
+    padding: 0.3em;
+    margin-right: 1.5%;
+    max-width: 30vmin;
+    object-fit: contain;
+    float: right;
+}
+
+/* Text header with computer*/
+h1 {
+    color:rgb(130, 239, 14);
+    padding: 1.2em 1.5em 1em 0.1em ;
+    display: flex;
+    justify-content: space-between;
+}
+.top em {
+    display: grid;
+    place-items: center;
+}
+.top img {
+    position: relative;
+    justify-content: right;
+    height: 80px;
+    width: 130px;
+}
+
+/*Main text*/
+header > img {
+    width: 14em;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+/* Paragraph border styles*/
+.info {
+    border: 3px groove #7fa8e1;
+    border-radius: 0.5em;
+    padding:.5em;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    color:rgb(130, 239, 14);
+}
+.info::after {    
+    content: "";
+    display: table;
+    clear: both;
+    overflow: hidden;
+}
+ul {
+    list-style: decimal;
+    margin: 2em;
+}
+
+/* Button styles*/
+a.button1:link {
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    text-decoration: none;
+}
+a.button1:hover {
+    background-color: rgb(9, 128, 45);
+    transform: translate(1px, -.5px);
+    transition: transform 0.15s ease;
+}
+
+a.button1[href="another_page.html"]:active {
+    transform: translate(1px, 1px);
+    transition: transform 0.1s ease;
+    background-color: #c0c01c;  
+}
+
+.button1 {
+    border-color: rgb(38, 85, 85, );
+    background-color: #79cb14;
+    padding: 6px;
+    margin: 10px 20px;
+    border-radius: .3em;
+    box-shadow: 1px 2px 2px black;
+    color: black;
+}
